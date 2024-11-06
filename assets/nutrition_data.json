@@ -1,0 +1,186 @@
+{
+    "thuc_pham": [
+        {
+            "ten": "Gạo trắng",
+            "calo": 130,
+            "carb": 28,
+            "fat": 0.3,
+            "protein": 2.7
+        },
+        {
+            "ten": "Ức gà",
+            "calo": 165,
+            "carb": 0,
+            "fat": 3.6,
+            "protein": 31
+        },
+        {
+            "ten": "Trứng",
+            "calo": 155,
+            "carb": 1.1,
+            "fat": 11,
+            "protein": 13
+        },
+        {
+            "ten": "Sữa",
+            "calo": 42,
+            "carb": 5,
+            "fat": 1,
+            "protein": 3.4
+        },
+        {
+            "ten": "Bông cải xanh",
+            "calo": 55,
+            "carb": 11,
+            "fat": 0.6,
+            "protein": 3.7
+        },
+        {
+            "ten": "Táo",
+            "calo": 52,
+            "carb": 14,
+            "fat": 0.2,
+            "protein": 0.3
+        },
+        {
+            "ten": "Thịt bò",
+            "calo": 250,
+            "carb": 0,
+            "fat": 20,
+            "protein": 26
+        },
+        {
+            "ten": "Thịt lợn",
+            "calo": 242,
+            "carb": 0,
+            "fat": 16,
+            "protein": 27
+        },
+        {
+            "ten": "Cà chua",
+            "calo": 18,
+            "carb": 4,
+            "fat": 0.2,
+            "protein": 0.9
+        },
+        {
+            "ten": "Khoai tây",
+            "calo": 77,
+            "carb": 17,
+            "fat": 0.1,
+            "protein": 2
+        },
+        {
+            "ten": "Đậu",
+            "calo": 127,
+            "carb": 22,
+            "fat": 0.6,
+            "protein": 9
+        },
+        {
+            "ten": "Cá ngừ",
+            "calo": 129.8,
+            "carb": 0,
+            "fat": 1.5,
+            "protein": 29.9
+        },
+        {
+            "ten": "Cá hồi",
+            "calo": 208.2,
+            "carb": 0,
+            "fat": 13.4,
+            "protein": 20.5
+        },
+        {
+            "ten": "Tôm",
+            "calo": 99.2,
+            "carb": 0.2,
+            "fat": 0.9,
+            "protein": 24
+        },
+        {
+            "ten": "Cua",
+            "calo": 103,
+            "carb": 0,
+            "fat": 1.3,
+            "protein": 22.8
+        },
+        {
+            "ten": "Thịt cừu",
+            "calo": 294,
+            "carb": 0,
+            "fat": 21.2,
+            "protein": 25.6
+        },
+        {
+            "ten": "Cam",
+            "calo": 47,
+            "carb": 11.8,
+            "fat": 0.1,
+            "protein": 0.9
+        },
+        {
+            "ten": "Đu đủ",
+            "calo": 42,
+            "carb": 10.8,
+            "fat": 0.4,
+            "protein": 0.5
+        },
+        {
+            "ten": "Dưa hấu",
+            "calo": 30.4,
+            "carb": 7.6,
+            "fat": 0.2,
+            "protein": 0.6
+        },
+        {
+            "ten": "Chuối",
+            "calo": 88.7,
+            "carb": 22.8,
+            "fat": 0.3,
+            "protein": 1.1
+        },
+        {
+            "ten": "Bơ",
+            "calo": 160,
+            "carb": 8.5,
+            "fat": 15,
+            "protein": 2
+        },
+        {
+            "ten": "Cà rốt",
+            "calo": 51,
+            "carb": 12,
+            "fat": 0.3,
+            "protein": 1.2
+        },
+        {
+            "ten": "Khoai lang",
+            "calo": 86,
+            "carb": 20.1,
+            "fat": 0.1,
+            "protein": 1.6
+        },
+        {
+            "ten": "Củ dền",
+            "calo": 53,
+            "carb": 13,
+            "fat": 0.2,
+            "protein": 1.6
+        },
+        {
+            "ten": "Xà lách",
+            "calo": 14.8,
+            "carb": 2.9,
+            "fat": 0.2,
+            "protein": 1.4
+        },
+        {
+            "ten": "Khổ qua",
+            "calo": 17,
+            "carb": 3.7,
+            "fat": 0.2,
+            "protein": 1
+        }
+    ]
+}
