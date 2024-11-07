@@ -21,7 +21,9 @@ class _HomePageState extends State<HomePage> {
   }
 
   void _fetchData() async {
-    historyCaloriesToday = await getMeals();
+    final now = DateTime.now().toLocal();
+    final date = '${now.day}/${now.month}/${now.year}';
+    historyCaloriesToday = await getMeals(date: date);
     for (var meal in historyCaloriesToday) {
       _addCalories(double.parse(meal['calories']));
     }
@@ -68,6 +70,7 @@ class _HomePageState extends State<HomePage> {
             ),
             const SizedBox(height: 20),
             const Divider(),
+            const Text('Chi tiết calo hôm nay', style: TextStyle(fontSize: 22)),
             Expanded(
               child: ListView.builder(
                   itemCount: historyCaloriesToday.length,

@@ -23,28 +23,45 @@ Future<bool> addMealData(Map<String, Object> formData) async {
   final protein = formData['protein'];
   final mealName = formData['mealName'];
   final food = formData['food'];
+  final date = formData['date'];
   final prefs = await SharedPreferences.getInstance();
   List<String> mealData = prefs.getStringList('meals') ?? [];
   int id = mealData.isNotEmpty ? int.parse(mealData.last.split('|')[0]) + 1 : 0;
-  mealData.add('$id|$calories|$carb|$fat|$protein|$mealName|$food');
+  mealData.add('$id|$calories|$carb|$fat|$protein|$mealName|$food|$date');
   final data = prefs.setStringList('meals', mealData);
   return data;
 }
 
-Future<List<Map<String, dynamic>>> getMeals() async {
+Future<List<Map<String, dynamic>>> getMeals({String? date}) async {
   final prefs = await SharedPreferences.getInstance();
   final mealData = prefs.getStringList('meals') ?? [];
-  return mealData
-      .map((meal) => {
-            'id': meal.split('|')[0],
-            'calories': meal.split('|')[1],
-            'carb': meal.split('|')[2],
-            'fat': meal.split('|')[3],
-            'protein': meal.split('|')[4],
-            'mealName': meal.split('|')[5],
-            'food': meal.split('|')[6],
-          })
-      .toList();
+  if (date != null) {
+    return mealData
+        .where((meal) => meal.split('|')[7].contains(date))
+        .map((meal) => {
+              'id': meal.split('|')[0],
+              'calories': meal.split('|')[1],
+              'carb': meal.split('|')[2],
+              'fat': meal.split('|')[3],
+              'protein': meal.split('|')[4],
+              'mealName': meal.split('|')[5],
+              'food': meal.split('|')[6],
+            })
+        .toList();
+  } else {
+    return mealData
+        .map((meal) => {
+              'id': meal.split('|')[0],
+              'calories': meal.split('|')[1],
+              'carb': meal.split('|')[2],
+              'fat': meal.split('|')[3],
+              'protein': meal.split('|')[4],
+              'mealName': meal.split('|')[5],
+              'food': meal.split('|')[6],
+              'date': meal.split('|')[7],
+            })
+        .toList();
+  }
 }
 
 Future<bool> addCaloPerDate(Map<String, Object> formData) async {
@@ -53,4 +70,9 @@ Future<bool> addCaloPerDate(Map<String, Object> formData) async {
   final prefs = await SharedPreferences.getInstance();
   final data = prefs.setString('$date', calo.toString());
   return data;
+}
+
+Future<void> delete() async {
+  final prefs = await SharedPreferences.getInstance();
+  prefs.clear();
 }

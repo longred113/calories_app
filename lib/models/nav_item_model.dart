@@ -1,6 +1,6 @@
 import 'package:calories_app/ui/addPage.dart';
 import 'package:calories_app/ui/homePage.dart';
-import 'package:calories_app/ui/testPage.dart';
+import 'package:calories_app/ui/statisticsPage.dart';
 import 'package:flutter/material.dart';
 
 class NavItemModel {
@@ -17,5 +17,5 @@ List<NavItemModel> bottomNavItems = [
   NavItemModel(
       title: "Thống kê",
       icon: Icon(Icons.history_outlined),
-      screen: TestPage()),
+      screen: StatisticsPage()),
 ];
